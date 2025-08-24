@@ -19,8 +19,8 @@ class AppConfig:
 
 def load_app_config() -> 'AppConfig':
     return AppConfig(
-        api_provider=os.getenv("API_PROVIDER", "openai"),
-        embedding_provider=os.getenv("EMBEDDING_PROVIDER", "openai"),
+        api_provider=os.getenv("API_PROVIDER", "groq"),
+        embedding_provider=os.getenv("EMBEDDING_PROVIDER", "huggingface"),
         openai_api_key=os.getenv("OPENAI_API_KEY", ""),
         groq_api_key=os.getenv("GROQ_API_KEY", ""),
         hf_token=os.getenv("HF_TOKEN", ""),
