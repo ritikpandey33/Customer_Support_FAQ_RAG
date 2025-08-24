@@ -1,0 +1,4 @@
+.env
+venv
+.claude
+train_expanded.json
